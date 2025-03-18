@@ -1,64 +1,89 @@
 # ServiceMasterFR
 
-Plateforme de vente de formations en ligne spécialisée dans la sécurité et la cybersécurité. Ce site est conçu pour offrir une expérience utilisateur fluide et sécurisée pour l'achat et l'accès à des formations professionnelles.
+Plateforme web professionnelle de vente de formations en ligne spécialisée dans la sécurité et la cybersécurité. Cette application offre un environnement sécurisé pour l'achat et l'accès à des formations professionnelles de haute qualité.
 
-## 🔹 Présentation du projet
+## 📋 Présentation
 
-ServiceMasterFR est une plateforme web permettant de :
+ServiceMasterFR est un site web conçu pour la vente de formations en ligne dans les domaines de la sécurité personnelle et de la cybersécurité. Le site respecte les normes les plus strictes en matière de sécurité et de confidentialité, tout en offrant une expérience utilisateur fluide et professionnelle.
 
-- Vendre des formations en ligne dans les domaines de la sécurité et cybersécurité
-- Offrir un accès sécurisé aux contenus pédagogiques
-- Présenter l'expertise du formateur de manière professionnelle
-- Garantir la confidentialité des données et la sécurité des transactions
+### Objectifs principaux
 
-Le site respecte les normes de confidentialité et de sécurité les plus strictes.
+- Présenter les formations de manière professionnelle et attractive
+- Faciliter l'achat et l'accès aux formations
+- Garantir la sécurité des utilisateurs et de leurs données
+- Inspirer confiance aux visiteurs et les convertir en clients
+- Offrir une plateforme évolutive et performante
 
-## 🔹 Technologies utilisées
+## 🚀 Technologies utilisées
 
 ### Frontend
 
-- Next.js (React)
-- TypeScript
-- Tailwind CSS
+- **Framework**: Next.js (React)
+- **Langage**: TypeScript
+- **Styles**: Tailwind CSS
+- **Déploiement**: Hostinger
 
 ### Backend
 
-- Node.js avec Express
-- TypeScript
-- PostgreSQL
-- JWT pour l'authentification
+- **Framework**: Node.js avec Express
+- **Base de données**: PostgreSQL
+- **Authentification**: JWT
+- **Paiements**: Stripe / PayPal
 
-### Autres
-
-- Stripe / PayPal pour les paiements
-- Hébergement sur Hostinger
-- HTTPS pour la sécurité
-
-## 🔹 Structure du projet
+## 🏗️ Structure du projet
 
 ```
-servicemasterfr/
-├── frontend/     # Application Next.js
-├── backend/      # API Express
-└── docs/         # Documentation
+ServiceMasterFR/
+├── frontend/                # Application Next.js
+│   ├── public/              # Ressources statiques
+│   └── src/
+│       ├── app/             # Pages de l'application
+│       ├── components/      # Composants réutilisables
+│       ├── lib/             # Utilitaires et services
+│       ├── hooks/           # Hooks React personnalisés
+│       └── context/         # Contextes React (auth, panier)
+│
+├── backend/                 # API Express
+│   ├── src/
+│   │   ├── controllers/     # Logique métier
+│   │   ├── models/          # Modèles de données
+│   │   ├── routes/          # Routes API
+│   │   ├── middleware/      # Middleware personnalisés
+│   │   ├── config/          # Configuration
+│   │   └── server.ts        # Point d'entrée du serveur
+│   └── ...
+│
+└── README.md                # Documentation du projet
 ```
 
-## 🔹 Fonctionnalités
+## 🖥️ Fonctionnalités principales
 
-- 📌 Catalogue de formations en ligne
-- 🔒 Système d'authentification sécurisé
-- 💳 Passerelle de paiement
-- 👤 Espace membre personnalisé
-- 📝 Blog avec contenu optimisé SEO
-- 📊 Système d'administration
+- **Page d'accueil** avec présentation des formations phares
+- **Catalogue de formations** détaillées
+- **Système d'authentification** sécurisé pour les utilisateurs
+- **Espace membre** personnalisé pour accéder aux formations achetées
+- **Système de paiement** sécurisé (Stripe et PayPal)
+- **Blog** avec contenu sur la sécurité et la cybersécurité
+- **Page de témoignages** pour renforcer la confiance des visiteurs
+- **Interface responsive** adaptée à tous les appareils
 
-## 🔹 Installation et configuration
+## 📦 Composants principaux
+
+- **HeroSection**: Section d'en-tête avec message d'accroche
+- **CourseSection**: Présentation des formations phares
+- **TrustSection**: Arguments de confiance pour les utilisateurs
+- **ProcessSection**: Explication du processus d'achat et d'utilisation
+- **TestimonialSection**: Témoignages clients
+- **Navbar**: Navigation responsive
+- **Footer**: Pied de page avec informations de contact
+
+## 🔧 Installation et démarrage
 
 ### Prérequis
 
-- Node.js v18 ou supérieur
-- PostgreSQL v14 ou supérieur
+- Node.js (v16+)
 - npm ou yarn
+- PostgreSQL
 
 ### Frontend
 
@@ -76,23 +101,22 @@ npm install
 npm run dev
 ```
 
-## 🔹 Documentation
-
-Pour plus d'informations sur la configuration et l'utilisation de l'application, consultez le dossier `/docs`.
-
-## 🔹 Sécurité
-
-Ce projet implémente plusieurs mesures de sécurité :
+## 🛡️ Mesures de sécurité
 
 - Authentification JWT
+- Validation côté serveur des données
 - Protection CSRF/XSS
 - Chiffrement des données sensibles
 - Authentification à deux facteurs
+- HTTPS obligatoire
 
-## 🔹 Licence
+## 📄 Licence
 
-Ce projet est propriétaire et confidentiel. Tous droits réservés.
+Ce projet est propriétaire. Tous droits réservés © ServiceMasterFR.
 
-## 🔹 Contact
+## 📞 Contact
 
-Pour toute question ou information, veuillez contacter [votre email].
+Pour toute question concernant ce projet, veuillez contacter :
+
+- Email: contact@servicemasterfr.fr
+- Site: [servicemasterfr.fr](https://servicemasterfr.fr)
